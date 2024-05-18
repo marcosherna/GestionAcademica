@@ -16,4 +16,8 @@ export class AppComponent {
 // Creando observable
   estudiantes$ = this.estudiantesServices.obtenerEstudiantes();
 
+  constructor() {
+    // this.estudiantesServices.postEstudiante().subscribe((data:any) => { console.log(data) });
+  }
+
 }

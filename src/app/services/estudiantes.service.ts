@@ -9,16 +9,30 @@ import { endpoints } from '../utils/endPoints';
 export default class EstudiantesService {
   private readonly http = inject(HttpClient);
 
-  constructor() { 
-    this.pruba(this);
+  constructor() {  
   }
   
   obtenerEstudiantes(): Observable<any> {
     return this.http.get(endpoints.obtenerEstudiantes);
   }
 
-  pruba(service: EstudiantesService){
-
+  /*{
+    "id": 0,
+    "nombre": "string",
+    "apellido": "string",
+    "codigo": "stringstring",
+    "correo": "user@example.com"
+  }*/
+  
+  postEstudiante(): Observable<any> {
+    const estudent = {
+      "id": 0,
+      "nombre": "string",
+      "apellido": "string",
+      "codigo": "stringstring",
+      "correo": "user@example.com"
+    };
+    return this.http.post(endpoints.agregarEstudiante, estudent);
   }
 
 }
