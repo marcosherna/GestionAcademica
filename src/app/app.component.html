@@ -1,23 +1,8 @@
 <main> 
-
-  <h1 class="text-3xl font-bold underline">
-    Hello world!
-  </h1>
-
-  <p-button label="Emails" badge="8" />
-
- 
-<p-button 
-    label="Messages" 
-    icon="pi pi-users" 
-    badge="2" 
-    badgeClass="p-badge-contrast" 
-    outlined="true" />
-
-
-    
+  <app-login />
   <pre>
-    {{estudiantes$ | async | json }}
-    </pre>
+    {{materias | async | json }} 
+  </pre>
+ 
   <router-outlet></router-outlet>
 </main>

@@ -13,26 +13,8 @@ export default class EstudiantesService {
   }
   
   obtenerEstudiantes(): Observable<any> {
-    return this.http.get(endpoints.obtenerEstudiantes);
+    return this.http.get(endpoints.Estudiante);
   }
-
-  /*{
-    "id": 0,
-    "nombre": "string",
-    "apellido": "string",
-    "codigo": "stringstring",
-    "correo": "user@example.com"
-  }*/
-  
-  postEstudiante(): Observable<any> {
-    const estudent = {
-      "id": 0,
-      "nombre": "string",
-      "apellido": "string",
-      "codigo": "stringstring",
-      "correo": "user@example.com"
-    };
-    return this.http.post(endpoints.agregarEstudiante, estudent);
-  }
+ 
 
 }
