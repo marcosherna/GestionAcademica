@@ -5,14 +5,7 @@ module.exports = {
   ],
   corePlugins: {
     preflight: false,
-  },
-  purge: {
-    enabled: true,
-    content: [
-      "./src/**/*.{html,ts}",
-    ],
-  },
-  darkMode: false, // or 'media' or 'class'
+  }, 
   theme: {
     extend: {},
   },
